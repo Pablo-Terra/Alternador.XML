@@ -1,2 +1,2 @@
 # Alternador.XML
-Script que altera TAGS de XML automaticamente.
+Script desenvolvido para alterar automaticamente Tags de XML agilizando processos na empresa Barreto Consultorias.
