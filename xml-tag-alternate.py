@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 # Achar o diretório do script
 script_dir = os.path.dirname(os.path.abspath(__file__))
-
+print("Directory found ",script_dir)
 # Iterar sobre todos os arquivos XML no diretório do script
 for filename in os.listdir(script_dir):
     if filename.endswith('.xml'):
@@ -12,11 +12,14 @@ for filename in os.listdir(script_dir):
         
         try:
             # Parse o arquivo XML f
+            print( file_path,
+                ''' Reading file . . .''')
             tree = ET.parse(file_path)
             root = tree.getroot()
             
             # Encontrar todas as tags CPOF e modificar o texto se necessário
-            for cpof_tag in root.findall('.//CPOF'):
+            for cpof_tag in root.findall('.//CFOP'):
+                print("CFOP Founded")
                 cpof_text = cpof_tag.text
                 if cpof_text and cpof_text.strip() and cpof_text.strip()[0] == '5':
                     cpof_tag.text = '6' + cpof_text[1:]
