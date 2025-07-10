@@ -13,7 +13,7 @@ Substituição de tags e/ou valores definidos
 
 Processamento em lote de múltiplos arquivos
 
-👨‍💼 Autor
+👨‍💼 
 Desenvolvido por Pablo Terra
 Contato
 pablo.terrag@gmail.com
